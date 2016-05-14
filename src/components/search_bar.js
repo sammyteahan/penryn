@@ -4,7 +4,7 @@ import { Component } from 'react';
 
 /**
 * @class SearchBar
-* @classdesc This component lives within our main app component 
+* @classdesc This component lives within our main app component
 */
 export default class SearchBar extends Component {
 
@@ -12,7 +12,7 @@ export default class SearchBar extends Component {
     super(props);
     this.state = {term: ''};
   }
-  
+
   onInputChange(term) {
     this.setState({term});
     this.props.onSearchTermChange(term);
