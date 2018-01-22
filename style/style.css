@@ -1,10 +1,21 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #eee !important;
+}
+
 .search-bar {
-    margin: 20px;
+    margin: 20px 0;
     text-align: center;
 }
 
 .search-bar input {
-    width: 75%;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    width: 100%;
 }
 
 .video-item img {
