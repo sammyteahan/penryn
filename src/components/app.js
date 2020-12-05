@@ -6,7 +6,7 @@ import SearchBar from './search_bar';
 import VideoList from './video_list';
 import VideoDetail from './video_detail';
 
-const YOUTUBE_API_KEY = 'AIzaSyAPdU79ksvj3QwxVseQMJFYGRiCrzBPjgQ';
+const YOUTUBE_API_KEY = '';
 
 export default class App extends Component {
   constructor(props) {
