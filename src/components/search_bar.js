@@ -1,7 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
 
-
 /**
 * @class SearchBar
 * @classdesc This component lives within our main app component

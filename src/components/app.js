@@ -6,7 +6,7 @@ import SearchBar from './search_bar';
 import VideoList from './video_list';
 import VideoDetail from './video_detail';
 
-const API_KEY = 'AIzaSyCnquqOstjnUTgyhboYiEtUEwuoCgYpNdM';
+const YOUTUBE_API_KEY = 'AIzaSyAPdU79ksvj3QwxVseQMJFYGRiCrzBPjgQ';
 
 export default class App extends Component {
   constructor(props) {
@@ -21,16 +21,16 @@ export default class App extends Component {
   }
 
   videoSearch(term) {
-    YTSearch({key: API_KEY, term: term}, (videos) => {
+    YTSearch({key: YOUTUBE_API_KEY, term: term}, (videos) => {
       this.setState({ videos, selectedVideo: videos[0] });
     });
   }
 
   /**
-  * @desc note inline callback fns passed down to children
-  *
-  * <SearchBar onSearchTermChange={(term) => this.videoSearch(term)} />
-  */
+   * @desc note inline callback fns passed down to children
+   *
+   * <SearchBar onSearchTermChange={(term) => this.videoSearch(term)} />
+   */
   render() {
     const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
 
